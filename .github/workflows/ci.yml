@@ -11,7 +11,7 @@ jobs:
     name: Run Pytest Checkpoints
     runs-on: ubuntu-latest
     env:
-      AGENT_API_KEY: ${{ secrets.AGENT_API_KEY }}
+      AGENT_API_KEY: ci-dummy
       REDIS_URL: "fake://"
     steps:
       - name: Checkout code
